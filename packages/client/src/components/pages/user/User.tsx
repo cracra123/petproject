@@ -110,7 +110,7 @@ export const User: FC = ({}) => {
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
                 currentTarget.src =
-                  "http://localhost:5000/static/uploads/empty-photo.png";
+                  "http://localhost:5000/static/uploads/empty-photo.jpg";
               }}
               onClick={() => avatar.current.click()}
             ></img>
