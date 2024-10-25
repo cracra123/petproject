@@ -74,7 +74,7 @@ console.log (pathname)
                     onError={({ currentTarget }) => {
                       currentTarget.onerror = null;
                       currentTarget.src =
-                        "http://localhost:5000/static/uploads/empty-photo.png";
+                        "http://localhost:5000/static/uploads/empty-photo.jpg";
                     }}
                   ></img>
 
