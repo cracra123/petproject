@@ -1,0 +1,11 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.follow {
+  border-radius: 8px;
+}
+.follow:hover {
+  cursor: pointer;
+}

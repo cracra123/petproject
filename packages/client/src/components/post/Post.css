@@ -1,0 +1,190 @@
+.post-align {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.post {
+  animation: appear-post 0.6s linear forwards;
+}
+.post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.post-layout {
+  background-color: rgb(36, 36, 36);
+  padding: 15px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.18);
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.post-info p {
+  font-size: 0.8em;
+  color: rgb(196, 196, 196);
+}
+.post-delete {
+  position: absolute;
+  z-index: 0;
+  top: 7px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+
+  padding: 2px;
+}
+.post-delete-icon {
+  color: white;
+  opacity: 0.9;
+}
+.post-empty {
+  visibility: hidden;
+}
+.post-delete-active {
+  position: absolute;
+  z-index: 0;
+  top: 7px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2px;
+}
+.profile-bar {
+  display: flex;
+}
+.profile-bar-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14.8px;
+}
+.profile-avatar {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  object-position: center;
+  object-fit: cover;
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.18);
+}
+.counter {
+  display: flex;
+  gap: 3px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.interaction {
+  display: flex;
+}
+.interaction-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.liked {
+  color: red;
+  animation: like 0.3s forwards;
+}
+.notLiked {
+  color: white;
+  animation: dislike 0.3s forwards;
+}
+.options-p {
+  padding: 7px;
+  width: 100%;
+}
+.options-p:hover {
+  background-color: rgb(65, 65, 65);
+}
+.interaction-material-wrapper {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background-color: rgb(41, 41, 41);
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+}
+.interaction-material-wrapper:hover {
+  cursor: pointer;
+  background-color: rgb(53, 53, 53);
+  transition: 0.2s;
+}
+.circle-icon {
+  color: rgb(58, 58, 58);
+}
+.circle-icon-active {
+  color: white;
+  animation: slide 0.3s forwards;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background-color: rgb(48, 48, 48);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.36);
+  padding: 5px 0px;
+}
+.options-exit {
+  display: none;
+}
+@keyframes appear-post {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    color: rgb(34, 30, 48);
+    transform: translate(0) scaleY(2) scaleX(2);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+@keyframes like {
+  0% {
+    color: white;
+    transform: translate(0) scaleY(2) scaleX(2);
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes dislike {
+  0% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}

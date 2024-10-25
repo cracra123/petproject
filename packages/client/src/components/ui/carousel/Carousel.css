@@ -1,0 +1,57 @@
+.carousel {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-post {
+  margin: 0 auto;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  object-position: center;
+  width: 530px;
+  height: 420px;
+  background-color: rgb(36, 36, 36);
+}
+
+.array-left {
+  color: white;
+  border: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  left: 1px;
+}
+
+.array-left:disabled {
+  display: none;
+}
+.array-left:active:hover {
+  transition: 0.4s;
+}
+.array-right {
+  color: white;
+  border: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  border-radius: 100%;
+}
+
+.array-right:disabled {
+  display: none;
+}
+.array-right:active:hover {
+  transition: 0.4s;
+}
