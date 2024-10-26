@@ -91,13 +91,13 @@ export const Post: FC<Props> = ({ post, deletePost }) => {
               <div className="profile-bar-wrapper">
                 <img
                   className="profile-avatar"
-                  src={`http://localhost:5000/static/uploads/${
+                  src={`http://parallax-project.ru:5000/static/uploads/${
                     currentPost.authorId
                   }.png?${Date.now()}`}
                   onError={({ currentTarget }) => {
                     currentTarget.onerror = null;
                     currentTarget.src =
-                      "http://localhost:5000/static/uploads/empty-photo.jpg";
+                      "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
                   }}
                 ></img>
                 <div className="post-info">
