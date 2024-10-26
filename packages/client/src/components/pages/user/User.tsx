@@ -39,7 +39,7 @@ export const User: FC = ({}) => {
 
     dispatch(
       updateAvatar(
-        `http://parallax-project.ru:5000/static/uploads/${user?.id}.png?${Date.now()}`
+        `http://localhost:5000/static/uploads/${user?.id}.png?${Date.now()}`
       )
     );
   };
@@ -104,13 +104,13 @@ export const User: FC = ({}) => {
           <div className="profile">
             <img
               className="avatar"
-              src={`http://parallax-project.ru:5000/static/uploads/${
+              src={`http://localhost:5000/static/uploads/${
                 user?.id
               }.png?${Date.now()}`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
                 currentTarget.src =
-                  "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
+                  "http://localhost:5000/static/uploads/empty-photo.png";
               }}
               onClick={() => avatar.current.click()}
             ></img>

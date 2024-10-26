@@ -28,7 +28,7 @@ export const Follow: FC<Props> = ({ modal, setModal, option, user }) => {
               <div className="followers-item">
                 <img
                   className="profile-avatar"
-                  src={`http://parallax-project.ru:5000/static/uploads/${
+                  src={`http://localhost:5000/static/uploads/${
                     elem[option.substring(0, option.length - 1) + `Id`]
                   }.png?${Date.now()}`}
                 ></img>
