@@ -68,13 +68,13 @@ console.log (pathname)
                 <div className="widget-wrapper">
                   <img
                     className="widget-avatar"
-                    src={`http://localhost:5000/static/uploads/${
+                    src={`http://parallax-project.ru:5000/static/uploads/${
                       user?.id
                     }.png?${Date.now()}`}
                     onError={({ currentTarget }) => {
                       currentTarget.onerror = null;
                       currentTarget.src =
-                        "http://localhost5000/static/uploads/empty-photo.png";
+                        "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
                     }}
                   ></img>
 

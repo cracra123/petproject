@@ -75,7 +75,7 @@ export const EditPost: FC<Props> = ({
   useEffect(() => {
     setFiles(
       images.map((elem) => ({
-        imageUrl: `http://localhost:5000/static/post_images/${elem.imageUrl}`,
+        imageUrl: `http://parallax-project.ru:5000/static/post_images/${elem.imageUrl}`,
       }))
     );
   }, []);

@@ -31,7 +31,7 @@ export const Carousel: FC<Props> = ({ images, counter, setCounter }) => {
 
       <img
         className="image-post"
-        src={`http://localhost:5000/static/post_images/${
+        src={`http://parallax-project.ru:5000/static/post_images/${
           images[counter].imageUrl
         }?${Date.now()}`}
       ></img>

@@ -39,13 +39,13 @@ export const Comments: FC<Props> = ({
         <div className="comment-input">
           <img
             className="profile-avatar"
-            src={`http://localhost:5000/static/uploads/${
+            src={`http://parallax-project.ru:5000/static/uploads/${
               user?.id
             }.png?${Date.now()}`}
             onError={({ currentTarget }) => {
               currentTarget.onerror = null;
               currentTarget.src =
-                "http://localhost:5000/static/uploads/empty-photo.png";
+                "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
             }}
           ></img>
           <input
@@ -63,14 +63,14 @@ export const Comments: FC<Props> = ({
             <div className="comment-image-wrapper">
               <Link to={`/profile/${elem.authorId}`}>
                 <img
-                  src={`http://localhost:5000/static/uploads/${
+                  src={`http://parallax-project.ru:5000/static/uploads/${
                     elem.authorId
                   }.png?${Date.now()}`}
                   className="profile-avatar"
                   onError={({ currentTarget }) => {
                     currentTarget.onerror = null;
                     currentTarget.src =
-                      "http://localhost:5000/static/uploads/empty-photo.png";
+                      "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
                   }}
                 ></img>
               </Link>

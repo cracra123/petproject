@@ -123,13 +123,13 @@ export const UserProfile: FC = () => {
             <div className="profile">
               <img
                 className="avatar"
-                src={`http://localhost:5000/static/uploads/${
+                src={`http://parallax-project.ru:5000/static/uploads/${
                   userProfile?.id
                 }.png?${Date.now()}`}
                 onError={({ currentTarget }) => {
                   currentTarget.onerror = null;
                   currentTarget.src =
-                    "http://localhost:5000/static/uploads/empty-photo.png";
+                    "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
                 }}
               ></img>
               <h1>{userProfile?.login}</h1>
