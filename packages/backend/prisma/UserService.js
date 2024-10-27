@@ -31,7 +31,7 @@ export class UserService {
             id: user.id,
           },
           `someone`,
-          { expiresIn: `10s` }
+          { expiresIn: `90d` }
         );
 
         return {
