@@ -62,6 +62,7 @@ export class UserService {
   }
 
   static async findAllUsersByLogin(input) {
+    console.log(`${input} asd`);
     const users = await prisma.user.findMany({
       where: {
         login: {
