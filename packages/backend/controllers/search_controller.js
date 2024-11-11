@@ -7,9 +7,8 @@ const SearchController = express.Router();
 SearchController.post("/", async (req, res) => {
   const { input } = req.body;
   console.log(input);
-
   const result = await UserService.findAllUsersByLogin({
-    input: input,
+    input,
   });
   res.json(result);
 });
