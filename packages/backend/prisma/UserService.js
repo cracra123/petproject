@@ -65,7 +65,7 @@ export class UserService {
     const users = await prisma.user.findMany({
       where: {
         login: {
-          contains: input,
+          startsWith: input,
         },
       },
     });
