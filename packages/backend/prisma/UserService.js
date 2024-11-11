@@ -93,7 +93,7 @@ export class UserService {
           id,
         },
         `someone`,
-        { expiresIn: `30d` }
+        { expiresIn: `90d` }
       );
 
       return { login, id, token };
