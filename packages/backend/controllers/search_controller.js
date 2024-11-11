@@ -1,6 +1,6 @@
 import express from "express";
 
-import { UserService } from "../prisma/UserService";
+import { UserService } from "../prisma/UserService.js";
 
 const SearchController = express.Router();
 
