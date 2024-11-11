@@ -61,6 +61,17 @@ export class UserService {
     return user;
   }
 
+  static async findAllUsersByLogin(input) {
+    const users = await prisma.user.findMany({
+      where: {
+        login: {
+          contains: input,
+        },
+      },
+    });
+    return users;
+  }
+
   static async createUser(login, password) {
     const candidate = await UserService.findUserByLogin(login);
     if (candidate) {

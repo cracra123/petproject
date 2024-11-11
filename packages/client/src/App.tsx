@@ -45,7 +45,7 @@ const App: FC = () => {
     localStorage.removeItem("token");
     setModal(!modal);
   };
-console.log (pathname)
+  console.log(pathname);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -60,6 +60,7 @@ console.log (pathname)
                 <h2>Parallax</h2>
               </div>
             </Link>
+            {/* {user &&} */}
             {user && (
               <div
                 className={modal ? `widget-active` : `widget`}
