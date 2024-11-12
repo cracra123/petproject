@@ -18,17 +18,21 @@ const Search: FC = ({}) => {
         setProfiles(data);
       };
       searchUsers(input);
+    } else {
+      setProfiles([]);
     }
   }, [input, setInput]);
   console.log(profiles);
-
   return (
     <div className="search">
       <div className="search-align">
-        <input
-          placeholder="Поиск"
-          onChange={(e) => setInput(e.target.value)}
-        ></input>
+        <div className="search-input">
+          <input
+            value={input}
+            placeholder="🔍Поиск"
+            onChange={(e) => setInput(e.target.value)}
+          ></input>
+        </div>
       </div>
     </div>
   );

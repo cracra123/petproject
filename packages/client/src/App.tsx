@@ -56,12 +56,15 @@ const App: FC = () => {
       <div className="navbar">
         <div className="container">
           <div className="navbar-align">
-            <Link to={"/posts"}>
-              <div className="logo">
-                <h2>Parallax</h2>
-              </div>
-            </Link>
-            {user && <Search></Search>}
+            <div className="logo-search-wrapper">
+              <Link to={"/posts"}>
+                <div className="logo">
+                  <h2>Parallax</h2>
+                </div>
+              </Link>
+              {user && <Search></Search>}
+            </div>
+
             {user && (
               <div
                 className={modal ? `widget-active` : `widget`}
