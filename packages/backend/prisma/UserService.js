@@ -68,6 +68,9 @@ export class UserService {
           startsWith: input,
         },
       },
+      select: {
+        password: false,
+      },
     });
     return users;
   }

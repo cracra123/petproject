@@ -17,6 +17,7 @@ import { useAppSelector, useAppDispatch } from "./store/hook";
 import { clear } from "./store/userSlice";
 import { Posts } from "./components/pages/posts/Posts";
 import { UserProfile } from "./components/pages/profile/UserProfile";
+import Search from "./components/search/Search";
 
 const App: FC = () => {
   const user = useAppSelector((state) => state.persist.userSlice.user);
@@ -60,7 +61,7 @@ const App: FC = () => {
                 <h2>Parallax</h2>
               </div>
             </Link>
-            {/* {user &&} */}
+            {user && <Search></Search>}
             {user && (
               <div
                 className={modal ? `widget-active` : `widget`}
