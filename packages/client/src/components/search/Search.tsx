@@ -15,7 +15,6 @@ const Search: FC = ({}) => {
     if (input) {
       const searchUsers = async (input: string) => {
         const { data } = await apiAxios.post("/search", { input });
-        console.log(data);
         setProfiles(data);
       };
       searchUsers(input);
@@ -28,7 +27,6 @@ const Search: FC = ({}) => {
       <div className="search-align">
         <input
           placeholder="Поиск"
-          value={input}
           onChange={(e) => setInput(e.target.value)}
         ></input>
       </div>
