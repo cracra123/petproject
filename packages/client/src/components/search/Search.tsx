@@ -15,6 +15,7 @@ const Search: FC = ({}) => {
     if (input) {
       const searchUsers = async (input: string) => {
         const { data } = await apiAxios.post("/search", { input });
+        console.log(data);
         setProfiles(data);
       };
       searchUsers(input);
