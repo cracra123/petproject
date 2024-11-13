@@ -27,6 +27,12 @@ input {
   background-color: rgb(37, 37, 37);
   color: white;
 }
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 ::-ms-reveal {
   filter: invert(100%);
 }

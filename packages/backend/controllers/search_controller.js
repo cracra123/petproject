@@ -10,6 +10,7 @@ SearchController.post("/", async (req, res) => {
   const result = await UserService.findAllUsersByLogin({
     input,
   });
+
   res.json(result);
 });
 

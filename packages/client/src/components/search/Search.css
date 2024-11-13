@@ -4,8 +4,21 @@
 }
 .search input {
   width: 80px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .search-input {
   display: flex;
   align-items: center;
+}
+.search-bar {
+  position: absolute;
+  top: 45px;
+  background-color: rgb(36, 36, 36);
+  width: 200px;
+  height: 20px;
+
+  border-radius: 7px;
+  border-top-left-radius: 0px;
+  border: 1px solid gray;
 }

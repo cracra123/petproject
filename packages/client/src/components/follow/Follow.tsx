@@ -31,6 +31,11 @@ export const Follow: FC<Props> = ({ modal, setModal, option, user }) => {
                   src={`http://parallax-project.ru:5000/static/uploads/${
                     elem[option.substring(0, option.length - 1) + `Id`]
                   }.png?${Date.now()}`}
+                  onError={({ currentTarget }) => {
+                    currentTarget.onerror = null;
+                    currentTarget.src =
+                      "http://parallax-project.ru:5000/static/uploads/empty-photo.png";
+                  }}
                 ></img>
                 <b>{elem[option.substring(0, option.length - 1) + `Login`]}</b>
               </div>

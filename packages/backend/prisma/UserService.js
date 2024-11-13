@@ -69,7 +69,8 @@ export class UserService {
         },
       },
       select: {
-        password: true,
+        login: true,
+        id: true,
       },
     });
     return users;
