@@ -31,6 +31,11 @@ const Search: FC = ({}) => {
     }
   }, [input, setInput]);
 
+  const selectProfile = () => {
+    setInputActive(false);
+    setInput("");
+  };
+
   return (
     <div className="search">
       <div className="search-align">
@@ -59,7 +64,7 @@ const Search: FC = ({}) => {
               {profiles.map((elem) => (
                 <Link to={`/profile/${elem.id}`}>
                   <div
-                    onClick={() => setInputActive(false)}
+                    onClick={() => selectProfile()}
                     className="search-profile-wrapper"
                   >
                     <img
