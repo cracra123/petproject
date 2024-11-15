@@ -68,10 +68,10 @@ export class UserService {
           startsWith: input,
         },
       },
-      select: {
-        login: true,
-        id: true,
-      },
+      // select: {
+      //   login: true,
+      //   id: true,
+      // },
     });
     return users;
   }
