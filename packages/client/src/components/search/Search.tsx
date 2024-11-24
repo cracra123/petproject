@@ -46,7 +46,7 @@ const Search: FC = ({}) => {
             onClick={() => setInputActive(true)}
             type="text"
             value={input}
-            placeholder="🔍Поиск"
+            placeholder="Поиск"
             onChange={(e) => setInput(e.target.value)}
           ></input>
           <CSSTransition
